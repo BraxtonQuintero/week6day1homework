@@ -10,8 +10,6 @@ def index():
     }
     return render_template('index.html', user = user_info)
 
-
-
 @app.route("/artists")
 def get_artist():
     user_info = {

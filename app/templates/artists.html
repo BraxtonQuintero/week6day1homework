@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="'stylesheet" href="/static/style.css">
+    <title>Flask Favorite 5</title>
+</head>
+
+<body class="body">
+    <h1>Favorite 5 Rappers</h1>
+    <h3>My name is {{ user.get('username') }} and I approve this message!</h3>
+    <h4>If you have problems send me an email at {{ user[ 'email' ] }}</h4>
+    <ul>
+        {% for artist in artists%} 
+            <li>{{artist.title() }}</li>
+        {% endfor %}                                                                                                                                                                                                                                                                                                                                                                         
+    </ul>
+</body>
+
+</html>

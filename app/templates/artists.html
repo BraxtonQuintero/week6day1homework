@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../static/style.css">
     <title>Flask Favorite 5</title>
 </head>
-<div id = main>
+<div id = 'main'>
     <body>
-        <h1>Favorite 5 Rappers</h1>
+        <h1>Favorite 5 Music Artist</h1>
         <h3>My name is {{ user.get('username') }} and I approve this message!</h3>
         <h4>If you have problems send me an email at {{ user[ 'email' ] }}</h4>
         <ul>
@@ -17,7 +17,16 @@
                 <li>{{artist.title() }}</li>
             {% endfor %}                                                                                                                                                                                                                                                                                                                                                                         
         </ul>
+        <div id = 'spotify'>
+            <h4>Each Artist Spotify Below</h4>
+            <h3><a href="https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J?si=gdmobRVCS5WkqvlqjN-q4g">The Kid Laroi Spotify</a></h3>
+            <h3><a href="https://open.spotify.com/artist/1z7b1Pr1rSlvWRzsW3HOrS?si=TlfKcBVzQ3OPCFYYtSN1Ow">Russ Spotify</a></h3>
+            <h3><a href="https://open.spotify.com/artist/40ZNYROS4zLfyyBSs2PGe2?si=KiBl7gBJRuCvh8b5rSmwVw">Zach Bryan Spotify</a></h3>
+            <h3><a href="https://open.spotify.com/artist/718COspgdWOnwOFpJHRZHS?si=v7-fRqtjSzO2jfJMHTkuDw">Luke Combs Spotify</a></h3>
+            <h3><a href="https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5?si=cX-ktpHQRrmgQffeitbdTQ">J Cole Spotify</a></h3>
+        </div>
     </body>
+
 </div>
 
 </html>

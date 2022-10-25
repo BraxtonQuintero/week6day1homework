@@ -16,5 +16,5 @@ def get_artist():
         'username' : 'Braxton',
         'email' : 'hiitsbraxton@gmail.com'
     }
-    artists = ['j cole', 'the kid laroi', 'tupac', 'lil baby', 'drake']
+    artists = ['j cole', 'the kid laroi', 'russ', 'zach bryan', 'luke combs']
     return render_template('artists.html', user = user_info, artists = artists)
